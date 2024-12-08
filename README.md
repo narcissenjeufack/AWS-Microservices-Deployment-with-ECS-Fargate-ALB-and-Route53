@@ -23,13 +23,17 @@ This project implements a scalable, serverless architecture for deploying contai
 ---
 ## **Project Purpose**
 This project presents the case of a company that's running a traditional web application on Amazon EC2 instances. The company needs to refactor the application as microservices that run on containers. Separate versions of the application exist in two distinct environments: production and testing. Load for the application is variable, but the minimum load and the maximum load are known. A solutions architect needs to design the updated application with a serverless architecture that minimizes operational complexity.
+
 The team of solution architects has decided to:
+
 - Configure a route 53 with a weighted routing policy that directs a certain percentage of traffic to         production environment (e.g: 80%) and another to testing environment (e.g: 20%).
 - Upload the container images to Amazon Elastic Container Registry (Amazon ECR).
 - Configure two auto scaled Amazon Elastic Container Service (Amazon ECS) clusters with the Fargate launch type to handle the expected load. Deploy tasks from the ECR images.
 - Configure two separate Application Load Balancers to direct traffic to the ECS clusters.
+
 The goal of this project is to realize this architecture and deploy it using terraform.
 The purpose of this project is to: 
+
 1. Refactor a traditional web application running on Amazon EC2 into microservices running on AWS ECS with Fargate. 
 2. Use a serverless architecture to minimize operational complexity. 
 3. Implement weighted traffic distribution for testing new features. 
