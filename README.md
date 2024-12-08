@@ -22,7 +22,7 @@ This project implements a scalable, serverless architecture for deploying contai
 
 ---
 ## **Project Purpose**
-This project presents the case of a company is running a traditional web application on Amazon EC2 instances. The company needs to refactor the application as microservices that run on containers. Separate versions of the application exist in two distinct environments: production and testing. Load for the application is variable, but the minimum load and the maximum load are known. A solutions architect needs to design the updated application with a serverless architecture that minimizes operational complexity.
+This project presents the case of a company that's running a traditional web application on Amazon EC2 instances. The company needs to refactor the application as microservices that run on containers. Separate versions of the application exist in two distinct environments: production and testing. Load for the application is variable, but the minimum load and the maximum load are known. A solutions architect needs to design the updated application with a serverless architecture that minimizes operational complexity.
 The team of solution architects has decided to:
 - Configure a route 53 with a weighted routing policy that directs a certain percentage of traffic to         production environment (e.g: 80%) and another to testing environment (e.g: 20%).
 - Upload the container images to Amazon Elastic Container Registry (Amazon ECR).

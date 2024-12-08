@@ -1,11 +1,11 @@
 variable "aws_region" {
   description = "AWS region for deployment"
-  default     = "us-east-1"
+  default     = "us-east-1" # put the region corresponding to your project
 }
 
 variable "environment" {
-  description = "Environment name (e.g., dev, staging, prod)"
-  default     = "dev"
+  description = "Environment name (e.g.test, prod)"
+  default     = "prod"
 }
 
 variable "alb_security_group_id" {
